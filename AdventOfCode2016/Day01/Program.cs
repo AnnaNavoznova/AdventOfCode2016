@@ -70,8 +70,7 @@ namespace Day01
     {
         public void Run()
         {
-            //var input = File.ReadAllText("input1.txt");
-            var input = "R4, R2, R2, R4";
+            var input = File.ReadAllText("input1.txt");
             var separator1 = ", ";
             string[] separators = {separator1};
             var parts = input.Split(separators, StringSplitOptions.RemoveEmptyEntries);
@@ -117,7 +116,7 @@ namespace Day01
                             break;
                     }
 
-                    var stepStr = x + "," + y + ";";
+                    var stepStr = x + "," + y + "***";
                     if (path.Contains(stepStr))
                     {
                         Console.WriteLine(Math.Abs(x) + Math.Abs(y));
