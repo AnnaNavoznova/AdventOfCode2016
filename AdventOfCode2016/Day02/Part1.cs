@@ -93,8 +93,9 @@ namespace Day02
                             break;
                     }
                 }
-                Console.WriteLine(GetButtonByCoords(x, y));
+                Console.Write(GetButtonByCoords(x, y));
             }
+            Console.WriteLine();
         }
 
 
